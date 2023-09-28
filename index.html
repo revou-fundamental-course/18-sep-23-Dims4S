@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Grocery Shop</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    
+</head>
+<body style="background-color: black; color: white;">
+    <header>
+        <!-- Add the image or logo in the top left corner -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <!-- Add the navigation bar -->
+        <div class="navbar">
+            <a href="#" style="border-left: 1px solid white;">Home</a>
+            <a href="#">Our Package</a>
+            <a href="#" style="border-right: 1px solid white;">Call Us</a>
+        </div>
+        <h1 style="text-align: center; font-weight: bold;">Top Rated E-Groceries Shop in Indonesia</h1>
+        <h3 style="text-align: center; color: #ff0000;">Every Day with best ingredients</h3>
+    </header>
+    
+    <!-- Container untuk "post" dan "contact us" -->
+    <div class="container">
+        <!-- Postingan -->
+        <div class="post-container" id="postContainer">
+            <h2>Latest Posts</h2>
+            <!-- Postingan -->
+            <div class="post">
+                <img src="pict1.jpeg" alt="Post 1" width="200" height="150" />
+                <p>Deskripsi Post 1</p>
+            </div>
+            <div class="post">
+                <img src="pict2.jpeg" alt="Post 2" width="200" height="150" />
+                <p>Deskripsi Post 2</p>
+            </div>
+            <!-- Tambahkan lebih banyak postingan sesuai kebutuhan -->
+            <!-- Tombol navigasi postingan -->
+            <div class="prev" onclick="changePost(-1)">Previous</div>
+            <div class="next" onclick="changePost(1)">Next</div>
+        </div>
+        
+        <!-- Contact Div -->
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <h3>Sales akan menghubungi anda dalam waktu 1x24 jam</h3>
+            <form id="contactForm" onsubmit="return validateForm()">
+              <label for="name">Name:</label>
+              <input placeholder="Masukkan Nama Anda" type="text" id="name" name="name" /><br /><br />
+              <label for="email">Email:</label>
+              <input placeholder="Masukkan Email Anda" type="email" id="email" name="email" /><br /><br />
+              <label for="option">Pilih yang anda inginkan:</label>
+              <select id="option" name="option">
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+              </select><br /><br />
+              <button type="submit">Submit</button>
+              <p id="validationMessage" style="color: red;"></p>
+          </form>
+        
+        </div>
+    </div>
+
+    <!-- Container untuk ulasan-ulasan -->
+    <div class="reviews-container">
+        <h2>Customer Reviews</h2>
+        <!-- Ulasan 1 -->
+        <div class="review">
+            <h3>Anonymous</h3>
+            <p>Bagus sekali</p>
+        </div>
+
+        <!-- Ulasan 2 -->
+        <div class="review">
+            <h3>Raf***</h3>
+            <p>Menarik!!!</p>
+        </div>
+        <!-- Ulasan 3 -->
+        <div class="review">
+          <h3>Gok**</h3>
+          <p>Gokill!!!</p>
+      </div>
+      <!-- Ulasan 4 -->
+      <div class="review">
+        <h3>Yu***</h3>
+        <p>KErenn!!!</p>
+    </div>
+
+        <!-- Tambahkan lebih banyak ulasan sesuai kebutuhan -->
+    </div>
+</div>
+
+</body>
+</html>

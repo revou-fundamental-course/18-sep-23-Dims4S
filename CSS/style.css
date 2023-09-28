@@ -1,0 +1,178 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+div {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+form {
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%; /* Lebar form 100% dari container */
+  box-sizing: border-box; /* Mengikutsertakan padding dan border dalam perhitungan lebar */
+  margin: 0 auto; /* Untuk membuat form berada di tengah halaman */
+}
+
+section {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+.navbar a {
+  border-radius: 5px;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /* Tambahkan padding di atas dan bawah */
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.navbar a:first-child {
+  border-right: 1px solid white;
+}
+
+.navbar a:last-child {
+  border-left: 1px solid white;
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+/* Add CSS for the contact div */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  /* Tambahkan aturan CSS lain untuk layout mobile di sini */
+}
+
+.post-container {
+  background-color: #555;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 60px;
+  width: 30%; /* Lebar postingan container */
+  border-radius: 10px; /* Menambahkan sudut yang tidak tajam */
+  overflow: hidden; /* Mengatasi gambar yang melebihi kontainer */
+  position: relative; /* Diperlukan untuk mengatur posisi gambar */
+}
+
+.contact-container {
+  border-radius: 10px;
+  background-color: #555;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 22px;
+  width: 40%; /* Lebar kontak container */
+}
+
+/* CSS untuk postingan */
+
+
+
+/* CSS untuk tombol navigasi postingan */
+.prev, .next {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+.reviews-container {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px; /* Tambahkan margin atas agar terpisah dari post-container */
+  border-radius: 10px; /* Menambahkan sudut yang tidak tajam */
+  display: flex;
+  flex-wrap: wrap; /* Menggunakan flex wrap untuk mengatur ulasan dalam beberapa baris */
+  justify-content: flex-start; /* Mengatur tata letak ke kiri (start) */
+  flex-direction: column; /* Mengatur tata letak kolom untuk ulasan */
+}
+.review {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px; /* Menambahkan sudut yang tidak tajam */
+  max-width: 300px; /* Menentukan lebar maksimum */
+}
+
+.review {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang dengan transparansi */
+}
+
+/* Mengatur gaya tombol submit */
+button[type="submit"] {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+        /* Mengatur gaya tombol submit */
+        button[type="submit"] {
+          background-color: #ff0000;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        label {
+          display: block;
+          text-align: left;
+          margin-bottom: 5px; /* Tambahkan margin bawah agar terpisah dari input */
+        }
+        #validationMessage {
+          color: red;
+          display: none; /* Sembunyikan pesan validasi awalnya */
+      }
